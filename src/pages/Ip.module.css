@@ -1,0 +1,197 @@
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/logo_El_Reino_0.jpg") center/cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #d29b00;
+  margin-top: 1rem;
+}
+
+.ipContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.connectionInfo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+.stepsList {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.stepsList li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.stepsList li::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  color: #d29b00;
+  font-size: 1.5rem;
+}
+
+.ipAddress {
+  color: #55ff55;
+  font-family: "Minecraft", sans-serif;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.communityWidget {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+.discordWidget {
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.minecraftButtonContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.minecraftButton {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.2rem;
+  width: 150px;
+  height: 40px;
+  display: block;
+}
+
+.minecraftButton .buttonTop {
+  display: block;
+  padding: 0.6rem 1rem;
+  background-color: #3a8520;
+  color: white;
+  font-weight: bold;
+  transform: translateY(-6px);
+  transition: all 0.2s ease;
+  border: 2px solid #2d6a1a;
+  font-family: "Minecraft", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minecraftButton .buttonBottom {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d6a1a;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.minecraftButton:hover .buttonTop {
+  transform: translateY(-8px);
+  background-color: #4a9a2a;
+}
+
+.rulesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ruleCard {
+  background-color: rgba(210, 155, 0, 0.1);
+  border: 1px solid #555;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.ruleCard h3 {
+  color: #d29b00;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .ipContent {
+    grid-template-columns: 1fr;
+  }
+
+  .heroSection {
+    min-height: 400px;
+  }
+}
+
+.communityWidget {
+  background-color: rgba(44, 47, 51, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #5865f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.discordWidget {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid #36393f;
+}
+
+.discordLink {
+  text-align: center;
+}
+
+.discordButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #5865f2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.discordButton:hover {
+  background-color: #4752c4;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(88, 101, 242, 0.3);
+}
+
+.buttonIcon {
+  font-size: 1.2rem;
+}

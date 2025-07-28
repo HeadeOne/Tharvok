@@ -1,0 +1,199 @@
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/logo_El_Reino_2.jpg") center/cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.heroTitle {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  color: #d29b00;
+  text-shadow: 3px 3px 0 #000;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #eeeeee;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* General Sections */
+.sectionDark {
+  background-color: #111;
+  padding: 5rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.sectionLight {
+  background-color: #1a1a1a;
+  padding: 5rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../assets/images/minecraft-dirt-bg.jpg");
+  background-size: 64px 64px;
+}
+
+.timelineSection {
+  padding: 5rem 0;
+  background-color: #0a0a0a;
+}
+
+/* Content Layout */
+.loreContent,
+.loreContentReversed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.loreContentReversed {
+  direction: rtl;
+}
+
+.loreContentReversed > * {
+  direction: ltr;
+}
+
+.loreText {
+  padding: 1rem;
+}
+
+.sectionTitle {
+  font-family: "Cinzel", serif;
+  color: #d29b00;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #d29b00, transparent);
+  margin-top: 1rem;
+}
+
+/* Text Styles */
+.dropCap {
+  font-size: 3.5rem;
+  float: left;
+  line-height: 0.8;
+  margin-right: 10px;
+  color: #d29b00;
+  font-family: "Cinzel", serif;
+}
+
+.loreParagraph {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.loreParagraph p {
+  margin-bottom: 1.5rem;
+}
+
+.loreHighlight {
+  background-color: rgba(210, 155, 0, 0.1);
+  border-left: 4px solid #d29b00;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.loreHighlight h3 {
+  color: #d29b00;
+  margin-top: 0;
+  font-family: "Cinzel", serif;
+}
+
+/* Image Styles */
+.loreImage {
+  position: relative;
+}
+
+.imageBorder {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.imageBorder:hover {
+  transform: scale(1.02);
+}
+
+.imageCaption {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Timeline Section */
+.timelineTitle {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  color: #d29b00;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .loreContent,
+  .loreContentReversed {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .loreImage {
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

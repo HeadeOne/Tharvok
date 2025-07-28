@@ -1,0 +1,71 @@
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/logo_El_Reino_0.jpg") center/cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #d29b00;
+  margin-top: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  color: #d29b00;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d29b00, transparent);
+  margin: 1rem auto;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.recurrentEvents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recurrentEvent {
+  background-color: rgba(210, 155, 0, 0.1);
+  border: 1px solid #d29b00;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.recurrentEvent h3 {
+  color: #d29b00;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 400px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,46 @@
+.hero {
+  height: 600px;
+  background: url("../../assets/images/Flux_Dev_Paisaje_pico_de_un_reino_en_ruinas_al_atardecer_con_c_2.jpg")
+    center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: "Cinzel", serif;
+  color: #d29b00;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #eeeeee;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.connectButton {
+  background-color: #991b1b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connectButton:hover {
+  background-color: #d29b00;
+  transform: scale(1.05);
+}

@@ -1,0 +1,42 @@
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/logo_El_Reino_2.jpg") center/cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d29b00;
+  margin-top: 1rem;
+}
+
+.rulesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fullRulesLink {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #991b1b;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.linkButton:hover {
+  background-color: #d29b00;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

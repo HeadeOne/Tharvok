@@ -1,0 +1,59 @@
+.footer {
+  background-color: #0a0a0a;
+  color: #aaaaaa;
+  padding: 3rem 0 1rem;
+  border-top: 1px solid #d29b00;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerLogo h3 {
+  color: #d29b00;
+  font-family: "Cinzel", serif;
+  margin-bottom: 0.5rem;
+}
+
+.footerLinks h4,
+.footerLegal h4 {
+  color: #eeeeee;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footerLinks ul,
+.footerLegal ul {
+  list-style: none;
+}
+
+.footerLinks li,
+.footerLegal li {
+  margin-bottom: 0.5rem;
+}
+
+.footerLinks a,
+.footerLegal a {
+  color: #aaaaaa;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover,
+.footerLegal a:hover {
+  color: #d29b00;
+}
+
+.footerCredits {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #222222;
+  font-size: 0.9rem;
+}
+
+.footerCredits p {
+  margin: 0.5rem 0;
+}

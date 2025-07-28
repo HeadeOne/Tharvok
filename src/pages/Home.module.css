@@ -1,0 +1,291 @@
+/* Estilos base */
+.minecraftBg {
+  background-color: #1a1a1a;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../assets/images//minecraft-dirt-bg.jpg");
+  background-size: 64px 64px;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sección de Bienvenida - Libro Minecraft */
+.welcomeSection {
+  padding: 4rem 0;
+}
+
+.minecraftBook {
+  background-color: #f0e6d2;
+  border: 4px solid #8b4513;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.bookDecoration {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid #5a3921;
+  pointer-events: none;
+  border-radius: 1px;
+}
+
+.minecraftTitle {
+  color: #5a3921;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  font-family: "Cinzel", serif;
+  position: relative;
+}
+
+.minecraftTitle::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #8b4513, transparent);
+  margin: 1rem auto;
+}
+
+.minecraftText {
+  color: #3e2723;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: "Roboto", sans-serif;
+}
+
+.firstLetter {
+  font-size: 2.5rem;
+  color: #8b4513;
+  font-weight: bold;
+  float: left;
+  line-height: 0.8;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family: "Cinzel", serif;
+}
+
+.bookDivider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #8b4513, transparent);
+  margin: 1.5rem 0;
+}
+
+.highlight {
+  color: #5a3921;
+  font-weight: bold;
+}
+
+/* Sección de Estadísticas */
+.statsSection {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4rem 0;
+  border-top: 2px solid #555;
+  border-bottom: 2px solid #555;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.statCard {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid #555;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  border-color: #ffaa00;
+  box-shadow: 0 6px 12px rgba(255, 170, 0, 0.2);
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.statLabel {
+  font-size: 1.2rem;
+  color: #aaa;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sección de Características */
+.featuresSection {
+  padding: 5rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images//minecraft-dirt-bg.jpg");
+  background-size: 64px 64px;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.titleBorder {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffaa00, transparent);
+}
+
+.titleText {
+  font-family: "Minecraft", sans-serif;
+  color: #ffaa00;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Llamado a la Acción */
+.ctaSection {
+  padding: 5rem 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 2px solid #ffaa00;
+}
+
+.ctaBox {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: "Minecraft", sans-serif;
+  color: #ff5555;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.minecraftButtonContainer {
+  margin-top: 2rem;
+}
+
+.minecraftButton {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.2rem;
+  width: 220px;
+  height: 50px;
+  display: block;
+}
+
+.minecraftButton .buttonTop {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  background-color: #3a8520;
+  color: white;
+  font-weight: bold;
+  transform: translateY(-6px);
+  transition: all 0.2s ease;
+  border: 2px solid #2d6a1a;
+  font-family: "Minecraft", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 0 #1e4d11;
+}
+
+.minecraftButton .buttonBottom {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d6a1a;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.minecraftButton:hover .buttonTop {
+  transform: translateY(-8px);
+  background-color: #4a9a2a;
+}
+
+.minecraftButton:active .buttonTop {
+  transform: translateY(-2px);
+}
+
+.serverInfo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.serverIp,
+.serverVersion {
+  font-family: "Minecraft", sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border: 2px solid #555;
+  color: #ffaa00;
+  margin: 0 auto;
+}
+
+.serverVersion {
+  color: #55ff55;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .minecraftBook {
+    padding: 2rem 1.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    flex-direction: column;
+  }
+
+  .titleBorder {
+    width: 100%;
+  }
+}

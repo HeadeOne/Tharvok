@@ -1,0 +1,10 @@
+I0728 17:28:35.452910   19208 load.go:37] Reloading schema and connectors...
+I0728 17:28:35.543417   19208 control.go:59] [/emulator/reinocaido b573] UpdateResources(): done
+Schema: sources: schema\schema.gql [2088B] 
+Connector "default": sources: connector\mutations.gql [1233B] connector\queries.gql [1802B] 
+I0728 17:28:35.563977   19208 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "H:\\Reino_Caido_JUICIO_DE_LAS_ALMAS\\Pagina web Reino Caido\\reino_caido\\dataconnect-generated\\js\\default-connector"
+I0728 17:28:35.573982   19208 collector.go:107] schema extensions wrote into "H:\\Reino_Caido_JUICIO_DE_LAS_ALMAS\\Pagina web Reino Caido\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [66094B] 
+I0728 17:28:35.581567   19208 collector.go:107] connector "default" javascriptSdk wrote into "H:\\Reino_Caido_JUICIO_DE_LAS_ALMAS\\Pagina web Reino Caido\\reino_caido\\dataconnect-generated\\js\\default-connector"
+Generated sources: angular\package.json [661B] angular\esm\package.json [17B] angular\esm\index.esm.js [0B] esm\package.json [17B] package.json [1145B] README.md [2800B] react\README.md [5443B] index.d.ts [246B] esm\index.esm.js [113B] index.cjs.js [149B] react\index.cjs.js [0B] react\esm\index.esm.js [0B] angular\index.d.ts [0B] angular\index.cjs.js [1B] react\index.d.ts [228B] react\package.json [468B] react\esm\package.json [17B] 
+I0728 17:28:35.595568   19208 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector

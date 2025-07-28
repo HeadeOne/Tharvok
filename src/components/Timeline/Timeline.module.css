@@ -1,0 +1,92 @@
+.timelineContainer {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timelineContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #d29b00, transparent);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timelineItem:nth-child(odd) .timelineContent {
+  margin-left: auto;
+  text-align: right;
+  padding-right: 3rem;
+  padding-left: 0;
+}
+
+.timelineItem:nth-child(even) .timelineContent {
+  padding-left: 3rem;
+}
+
+.timelineDot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #d29b00;
+  border: 3px solid #111;
+  box-shadow: 0 0 0 4px #d29b00;
+}
+
+.timelineContent {
+  width: calc(50% - 40px);
+  padding: 1.5rem;
+  background-color: rgba(17, 17, 17, 0.8);
+  border: 1px solid #333;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timelineYear {
+  font-family: "Minecraft", sans-serif;
+  color: #d29b00;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.timelineEventTitle {
+  font-family: "Cinzel", serif;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.timelineDescription {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timelineContainer::before {
+    left: 20px;
+  }
+
+  .timelineItem:nth-child(odd) .timelineContent,
+  .timelineItem:nth-child(even) .timelineContent {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .timelineDot {
+    left: 20px;
+  }
+}
